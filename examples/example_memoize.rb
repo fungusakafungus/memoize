@@ -27,7 +27,7 @@ if $0 == __FILE__
    b = Foo.new
    c = Foo.new
    
-   file = ENV["HOME"] || ENV["USERPROFILE"] + "/fib.cache"
+   file = (ENV["HOME"] || ENV["USERPROFILE"]) + "/fib.cache"
    
    cache1 = b.memoize(:fib)
    cache2 = b.memoize(:factorial)
